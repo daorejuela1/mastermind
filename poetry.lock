@@ -1,0 +1,17 @@
+[[package]]
+category = "main"
+description = "A tkinter GUI builder."
+name = "pygubu"
+optional = false
+python-versions = "*"
+version = "0.10.2"
+
+[metadata]
+content-hash = "462be6ddd3c5c75bbac4aa61a58bd97e29f09cd5ebbb312ed7333082d04dc7d8"
+python-versions = "^3.8"
+
+[metadata.files]
+pygubu = [
+    {file = "pygubu-0.10.2-py3-none-any.whl", hash = "sha256:fa86fd4f57960d9be23d2f13612415c7aab726d9ac56784642796b1b71a579c5"},
+    {file = "pygubu-0.10.2.tar.gz", hash = "sha256:24756311ca70f9acea2d444f0b5c8aaaff5a814e5a5957c16dc489920b699547"},
+]

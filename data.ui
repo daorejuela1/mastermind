@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="ttk.Frame" id="frame_2">
+    <property name="height">800</property>
+    <property name="width">600</property>
+    <layout manager="grid">
+      <property name="propagate">False</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="id_2">
+        <property name="anchor">center</property>
+        <property name="compound">top</property>
+        <property name="cursor">arrow</property>
+        <property name="font">{MS Sans Serif} 14 {bold}</property>
+        <property name="foreground">#000000</property>
+        <property name="justify">center</property>
+        <property name="padding">5</property>
+        <property name="relief">groove</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">Mastermind
+</property>
+        <property name="width">50</property>
+        <property name="wraplength">0</property>
+        <layout manager="pack">
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="labelframe_1">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Play vs A.I</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="anchor">nw</property>
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Radiobutton" id="radiobutton_1">
+            <property name="text" translatable="yes">A.I</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Message" id="message_2">
+            <property name="relief">flat</property>
+            <property name="takefocus">false</property>
+            <property name="text" translatable="yes">
+Play against a random machine
+</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="checkbutton_3">
+            <property name="text" translatable="yes">Easy</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="checkbutton_4">
+            <property name="text" translatable="yes">Medium</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Checkbutton" id="checkbutton_5">
+            <property name="text" translatable="yes">Hard</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="labelframe_3">
+        <property name="borderwidth">2</property>
+        <property name="height">200</property>
+        <property name="labelanchor">e</property>
+        <property name="relief">groove</property>
+        <property name="text" translatable="yes">Play vs Friend</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="anchor">ne</property>
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Radiobutton" id="radiobutton_2">
+            <property name="text" translatable="yes">Human Friend</property>
+            <layout manager="pack">
+              <property name="anchor">se</property>
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Message" id="message_4">
+            <property name="relief">flat</property>
+            <property name="text" translatable="yes">
+Play against a friend</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame_6">
+        <property name="height">400</property>
+        <property name="width">400</property>
+        <layout manager="pack">
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="button_8">
+            <property name="text" translatable="yes">Play</property>
+            <property name="width">10</property>
+            <bind add="" handler="callback" sequence="&lt;1&gt;" />
+            <layout manager="grid">
+              <property name="propagate">True</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame_7">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="propagate">True</property>
+          <property name="side">bottom</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label_5">
+            <property name="anchor">center</property>
+            <property name="font">{Centaur} 10 {}</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">Created with love by @Nathaly Sotomayor Ampudia @Santiago Peña @Emma Navarro @Ricardo Alfonso Camayo Erazo @David Orejuela </property>
+            <property name="wraplength">550</property>
+            <layout manager="grid">
+              <property name="propagate">True</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
