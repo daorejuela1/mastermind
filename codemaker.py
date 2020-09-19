@@ -1,4 +1,7 @@
-
+#!/usr/bin/python3
+"""
+Screen for the player to select actions
+"""
 from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
@@ -17,6 +20,7 @@ class MakerApplication(Frame):
       
       arguments = " ".join([color['bg'] for color in self.combination])
       print("python3 mastermind.py {}".format(arguments))
+      root.wm_state('iconic')
       subprocess.call("python3 mastermind.py {}".format(arguments), shell=True)
       sys.exit()
 
@@ -91,9 +95,10 @@ class MakerApplication(Frame):
 
 if __name__ == '__main__':
   root = Tk()
-  root.geometry('1200x1000')
-  root.title('esto es una ventana')
+  root.geometry('800x600')
+  root.title('Create your code')
+  root.resizable(False, False)
   app = MakerApplication(master=root)
-  app.master.title('esto es una ventana')
+  app.master.title('Create your code')
   app.mainloop()
   root.destroy()

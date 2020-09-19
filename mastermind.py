@@ -1,6 +1,7 @@
-# # import the module
-# """ esto es un comentario """
-# from tkinter import *
+#!/usr/bin/python3
+"""
+Classic mastermind game
+"""
 
 
 # top = tkinter.Tk()
@@ -133,6 +134,7 @@ class Application(Frame):
       print(my_combination)
       if self.code == my_combination:
         messagebox.showinfo(title="You are the winner", message="Congrats! You cracked the code")
+        root.wm_state('iconic')
         subprocess.call("python3 main.py", shell=True)
         sys.exit()
       else:
@@ -158,6 +160,7 @@ class Application(Frame):
       
       if Application.combination_number == ms_heigt - 1:
         messagebox.showinfo(title="Sorry you lose", message="Sorry! You didn't crack the code")
+        root.wm_state('iconic')
         subprocess.call("python3 main.py", shell=True)
         sys.exit()
       else:
@@ -167,6 +170,9 @@ class Application(Frame):
 
     def __init__(self, master=None):
         Frame.__init__(self, master)
+        root.geometry('900x600')
+        root.title('Mastermind')
+        root.resizable(False, False)
         self.pack(fill=X, padx=0, pady=0)
         self.tkvar2 = tk.StringVar()
         self.tkvar2.set(colors[0])
@@ -180,7 +186,6 @@ class Application(Frame):
 if __name__ == '__main__':
   root = Tk()
   # tamaño de la ventana
-  root.geometry('1200x1000')
   # titulo de la ventana
   app = Application(master=root)
   app.mainloop()

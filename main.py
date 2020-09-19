@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+Main menu
+"""
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
@@ -21,9 +26,10 @@ def btnClickFunction():
     print("Selected play vs AI level {}".format(rbDifficult.get()))
     arguments = " ".join(colors_code)
     print("python3 mastermind.py {}".format(arguments))
+    root.wm_state('iconic')
     subprocess.call("python3 mastermind.py {}".format(arguments), shell=True)
-    sys.exit()
   elif  (CbeCheckboxVariable.get() == 2):
+    root.wm_state('iconic')
     print("Selected play vs Friend")
     subprocess.call("python3 codemaker.py", shell=True)
     sys.exit()
@@ -61,7 +67,7 @@ def CheckboxSelected():
 def DifficultChanged():
   return
 # This is the section of code which creates the main window
-root.geometry('1200x1000')
+root.geometry('800x600')
 root.configure(background='#A9A9A9')
 root.title('Mastermind')
 
@@ -99,5 +105,5 @@ for text, mode in ARBEES:
 	rbDifficulta=Radiobutton(frame, text=text, variable=rbDifficult, value=mode, command=DifficultChanged, bg='#A9A9A9', font=('arial', 24, 'normal')).pack(side='top', anchor = 'w')
 rbDifficult.set(1)
 
-
+root.resizable(False, False)
 root.mainloop()
