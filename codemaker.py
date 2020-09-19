@@ -5,7 +5,8 @@ from tkinter import messagebox
 import subprocess
 colors = ['blue', 'red', 'yellow', 'green', 'orange', 'cyan', 'purple', 'pink']
 class MakerApplication(Frame):
-
+    """Class for the player to make the code
+    """
     button_idx = 0
 
     def btnClickFunction(self):
@@ -30,13 +31,19 @@ class MakerApplication(Frame):
       self.createWidgets()
 
     def menu(self):
+      """Gets back to menu
+      """
       subprocess.call("python3 main.py", shell=True)
       sys.exit()
 
     def change_color(self, btn):
+        """Change color for button
+        """
         btn.configure(bg=self.tkvar2.get())      
 
     def createWidgets(self):
+        """Create all widgets
+        """
         ms_heigt = 1
         self.right_block = Frame(self)
         self.right_block.grid(row=1, column=2)

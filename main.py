@@ -9,6 +9,8 @@ import random
 
 # this is the function called when the button is clicked
 def btnClickFunction():
+  """ Starts the game 
+  """
   if (CbeCheckboxVariable.get() == 1):
     ms_width = rbDifficult.get() + 3
     colors = ['blue', 'red', 'yellow', 'green', 'orange', 'cyan', 'purple', 'pink']

@@ -20,20 +20,37 @@ ms_heigt = 7
 ms_widht = 4
 
 class Application(Frame):
-
+    """
+    Tkinter Application to let the player 1 select colors
+    """
     button_idx = 0
     combination_number = 0
 
     def change_style(btn):
+        """Change button style.
+
+        Keyword arguments:
+        btn -- button object
+        """
         color = random.choice(['red', 'blue', 'yellow', 'dark gray', 'purple', 'cyan', 'brown', 'orange'])
         btn.configure('Die.TButton', background=color)
 
 
     def change_color(self, btn):
+        """Change color style.
+
+        Keyword arguments:
+        btn -- button object
+        """
         btn.configure(bg=self.tkvar2.get()) 
   
 
     def createWidgets(self):
+        """Create all widgets
+
+        Keyword arguments:
+        btn -- button object
+        """
         self.title = Label(self, text="Master-Mind")
         self.title.grid(row=0, column=1, pady=(10, 10))
         self.score = Label(self, text="")
@@ -80,18 +97,32 @@ class Application(Frame):
         
 
     def activate_row(self, row_num):
+      """Activate matrix row
+
+      Keyword arguments:
+      row_num -- row number
+      """
       for btn in combinations[row_num]:
         btn["state"] = "normal"
 
     def disable_row(self, row_num):
+      """disable_row matrix row
+
+      Keyword arguments:
+      row_num -- row number
+      """
       for btn in combinations[row_num]:
         btn["state"] = "disable"
 
     def random_code(self):
+      """reads input code
+      """
       # self.disable_row(Application.combination_number)
       return sys.argv[1:]
 
     def check_code(self):
+      """checks if code is correct
+      """
       my_combination = []
       for button in combinations[Application.combination_number]:
         my_combination.append( button["bg"])
