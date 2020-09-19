@@ -37,6 +37,8 @@ $ ./main.py
 
 ## The Game 😎
 
+![set_size](https://user-images.githubusercontent.com/55990484/93660905-3fd0db00-fa19-11ea-97db-fb3c0169cb4c.gif)
+
 ### **Object of the Game**
 To outsmart your opponent with a clever code or great guesswork.
 
@@ -45,6 +47,8 @@ To outsmart your opponent with a clever code or great guesswork.
 Your aim is to crack the code in the least number of attempts.
 
 You get 8 attempts at breaking the code. If you can’t discover it by then then you lose that game. But that’s ok. You can get a new code and try again.
+
+![set_game](https://user-images.githubusercontent.com/55990484/93660958-a0f8ae80-fa19-11ea-8f96-232110a566c3.gif)
 
 The Code Breaker code is made up of 4 to 6 colours from the 8 available colours. To win you must place the right marbles in the right order. After each attempt you will be told how you went.
 
