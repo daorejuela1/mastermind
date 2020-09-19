@@ -1,6 +1,7 @@
-# # import the module
-# """ esto es un comentario """
-# from tkinter import *
+#!/usr/bin/python3
+"""
+Classic mastermind game
+"""
 
 
 # top = tkinter.Tk()
